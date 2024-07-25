@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rainha Musical Petalas de Prata 2006</title>
+</head>
+<body>
+    <div class="music-player">
+        <h1>Rainha Musical Petalas de Prata 2006</h1>
+        <select id="songList" onchange="changeSong()">
+            <option value="01 -amor-de-motel.mp3">01 -amor-de-motel</option>
+            <option value="02 -bebo-pra-esquecer.mp3">02 -bebo-pra-esquecer</option>
+            <option value="03 -boa-de-cama.mp3">03 -boa-de-cama</option>
+            <option value="04 -carta-marcada.mp3">04 -carta-marcada</option>
+            <option value="05 -eu-vou-te-mostrar.mp3">05 -eu-vou-te-mostrar</option>
+            <option value="06 -garota-da-loja.mp3">06 -garota-da-loja</option>
+            <option value="07 -guipeca.mp3">07 -guipeca</option>
+            <option value="08 -linda-rainha.mp3">08 -linda-rainha</option>
+            <option value="09 -lua-parceira.mp3">09 -lua-parceira</option>
+            <option value="10 -meu-heroi.mp3">10 -meu-heroi</option>
+            <option value="11 -petalas-de-prata.mp3">11 -petalas-de-prata</option>
+            <option value="12 -qual-e.mp3">12 -qual-e</option>
+            <option value="13 -tic-tac-do-relogio.mp3">13 -tic-tac-do-relogio</option>
+            <option value="14 -toma-juizo.mp3">14 -toma-juizo</option>
+
+            </select>
+    <audio id="musicPlayer" controls>
+        <source id="audioSource" src="" type="audio/mp3">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <div class="player-controls">
+        <button id="playPauseBtn" onclick="playPause()">Play/Pause</button>
+        <input type="range" id="volumeControl" onchange="setVolume()" />
+        <span id="currentTime">0:00</span>
+        <progress id="progressBar" value="0" max="100"></progress>
+        <span id="duration">0:00</span>
+        </div>
+        
+    </div>
+
+    <ul>
+        <a href="./petalas-de-prata.jpg" download="petalas-de-prata.jpg"><button>Imagem Petalas de Prata</button></a>
+    </ul>
+    <script src="script.js"></script>
+</body>
+</html>
